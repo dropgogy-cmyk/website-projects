@@ -127,7 +127,6 @@
 </footer>
 <div class="mobile-order"><a class="button" href="#menu">Смотреть меню <span aria-hidden="true">↓</span></a></div>
 <script>
-document.documentElement.classList.add('js-ready');
 const toggle=document.querySelector('.menu-toggle');
 const nav=document.querySelector('.nav-links');
 if(toggle&&nav){
@@ -149,6 +148,7 @@ filters.forEach(button=>button.addEventListener('click',()=>{
   dishes.forEach(dish=>{dish.hidden=selected!=='all'&&dish.dataset.category!==selected;});
 }));
 if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+  document.documentElement.classList.add('js-ready');
   const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{
     if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}
   }),{threshold:.12});
