@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0a09"><meta name="description" content="NOCTÉ — L’art de la nuit. Парфюмерная концепция, созданная как интерактивная цифровая инсталляция.">
+<title>NOCTÉ — L’art de la nuit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--ink:#0b0a09;--paper:#eee4d2;--gold:#cbb18a;--muted:#a59b8e;--line:#ffffff26}
+*{box-sizing:border-box}html{background:var(--ink);scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--paper);font-family:"DM Sans",sans-serif;font-weight:300;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button{font:inherit;color:inherit}.hero{min-height:100svh;position:relative;isolation:isolate;overflow:hidden;background:radial-gradient(ellipse at 50% 42%,#3b3023 0%,#191613 35%,#0b0a09 72%)}#stage{position:absolute;inset:0;z-index:-1;touch-action:pan-y;pointer-events:none}.grain{position:absolute;inset:0;pointer-events:none;z-index:0;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.3'/%3E%3C/svg%3E")}.nav{height:90px;padding:0 clamp(22px,5.8vw,84px);display:flex;align-items:center;justify-content:space-between;position:relative;z-index:3}.wordmark{font-family:Italiana,serif;letter-spacing:.28em;font-size:clamp(23px,2.1vw,32px)}.nav-right{display:flex;align-items:center;gap:25px}.edition{font-size:9px;letter-spacing:.22em;color:#b8ac9b}.cta{border:1px solid #e6d9c44a;border-radius:100px;padding:14px 23px;letter-spacing:.18em;font-size:10px;background:#1714118c;backdrop-filter:blur(14px);transition:background .3s,border-color .3s}.cta:hover{background:#cbb18a1c;border-color:var(--gold)}.hero-copy{position:absolute;z-index:2;left:clamp(22px,9vw,140px);right:clamp(22px,9vw,140px);top:48%;transform:translateY(-8%);pointer-events:none}.eyebrow{font-size:10px;letter-spacing:.35em;color:#c7b8a3;text-transform:uppercase;margin:0 0 20px}.hero h1{font-family:Italiana,serif;font-weight:400;font-size:clamp(76px,13.8vw,194px);letter-spacing:-.045em;line-height:.77;margin:0;max-width:850px;text-shadow:0 8px 50px #0005}.hero h1 em{font-style:normal;color:var(--gold);display:block;margin-left:clamp(30px,12vw,170px)}.hero-bottom{position:absolute;z-index:2;left:clamp(22px,5.8vw,84px);right:clamp(22px,5.8vw,84px);bottom:32px;display:flex;align-items:end;justify-content:space-between;gap:22px}.intro{max-width:340px;color:#c1b7aa;font-size:13px;line-height:1.8}.intro b{display:block;font-size:9px;letter-spacing:.24em;font-weight:400;color:var(--gold);margin-bottom:9px}.scroll{font-size:9px;letter-spacing:.2em;color:#b9ad9c;display:flex;gap:14px;align-items:center}.scroll:before{content:"";height:1px;width:45px;background:var(--gold)}.object-label{position:absolute;right:clamp(20px,5.8vw,84px);top:46%;writing-mode:vertical-rl;font-size:8px;letter-spacing:.26em;color:#cfc2ae9c;z-index:2}.section{padding:clamp(80px,13vw,170px) clamp(22px,9vw,140px);position:relative}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:start;border-top:1px solid var(--line);padding-top:18px;margin-bottom:70px}.section-index,.section-note{font-size:9px;letter-spacing:.23em;color:var(--muted)}.section h2{font-family:Italiana,serif;font-size:clamp(42px,7.5vw,100px);font-weight:400;line-height:.98;letter-spacing:-.03em;max-width:850px;margin:0}.section h2 em{font-style:normal;color:var(--gold)}.notes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:var(--line);margin-top:75px;border:1px solid var(--line)}.note{background:#0e0d0b;padding:30px 25px;min-height:175px}.note small{font-size:9px;color:var(--gold);letter-spacing:.2em}.note h3{font-family:Italiana,serif;font-size:30px;font-weight:400;margin:35px 0 9px}.note p{font-size:12px;color:var(--muted);line-height:1.7;margin:0}.manifesto{background:#d9c7a8;color:#211b15;min-height:58vh;display:flex;align-items:center;justify-content:center;text-align:center}.manifesto .section-index{color:#5c4a36}.manifesto h2{max-width:920px}.manifesto h2 em{color:#7c5c35}.manifesto p{font-size:12px;line-height:1.8;max-width:400px;margin:32px auto 0;color:#4e4030}.footer{padding:40px clamp(22px,5.8vw,84px);display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);font-size:9px;letter-spacing:.15em;color:var(--muted)}.footer .wordmark{color:var(--paper)}.fallback{position:absolute;inset:12% 10%;margin:auto;width:80%;height:75%;background:radial-gradient(ellipse at 35% 28%,#d9c9b0,#635b50 18%,#171411 42%,#050505 68%);filter:blur(22px);border-radius:48% 52% 43% 57% / 48% 43% 57% 52%;opacity:.65;transform:rotate(-19deg)}.js-ready .fallback{display:none}
+@media(min-width:900px){.hero-copy{top:45%}.hero h1{font-size:clamp(120px,12.7vw,198px)}}
+@media(max-width:650px){.nav{height:76px;padding:0 19px}.wordmark{font-size:23px;letter-spacing:.23em}.edition{display:none}.nav-right{gap:0}.cta{padding:12px 15px;font-size:9px}.hero{min-height:100svh;min-height:100dvh}.hero-copy{left:23px;right:23px;top:44%;transform:translateY(-4%)}.eyebrow{font-size:8px;letter-spacing:.22em;margin-bottom:20px}.hero h1{font-size:clamp(70px,16vw,108px);line-height:.83;letter-spacing:-.055em}.hero h1 em{margin-left:10vw}.object-label{top:39%;right:16px;font-size:7px}.hero-bottom{left:22px;right:22px;bottom:24px;display:block}.intro{font-size:12px;line-height:1.7;max-width:290px}.scroll{margin-top:22px;font-size:8px}.section{padding:85px 22px}.section-head{margin-bottom:44px}.section-note{max-width:130px;text-align:right;line-height:1.6}.section h2{font-size:clamp(45px,12vw,68px)}.notes{grid-template-columns:1fr;margin-top:42px}.note{min-height:auto;padding:23px}.note h3{margin:23px 0 8px;font-size:28px}.manifesto{min-height:55vh}.footer{padding:27px 22px;align-items:start;flex-direction:column}.fallback{inset:15% -18%;width:135%;height:60%;filter:blur(17px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<main>
+<section class="hero" id="top" aria-label="NOCTÉ — парфюмерная концепция">
+<div id="stage" aria-hidden="true"></div><div class="fallback" aria-hidden="true"></div><div class="grain"></div>
+<header class="nav"><a class="wordmark" href="#top" aria-label="NOCTÉ — наверх">NOCTÉ</a><div class="nav-right"><span class="edition">MAISON DE PARFUM · PARIS — MOSCOU</span><a class="cta" href="#contact">ОТКРЫТЬ КОЛЛЕКЦИЮ</a></div></header>
+<div class="hero-copy"><p class="eyebrow">EAU DE PARFUM · ÉDITION NOCTURNE</p><h1>L’art de <em>la nuit.</em></h1></div>
+<div class="object-label">01 / ESSENCE · LUMIÈRE · MÉMOIRE</div>
+<div class="hero-bottom"><p class="intro"><b>LE SILENCE A UNE ODEUR</b>Аромат как воспоминание о ночи. Малые парфюмерные серии, созданные для тех, кто выбирает не громкость, а глубину.</p><a class="scroll" href="#essence">ИССЛЕДОВАТЬ КОНЦЕПЦИЮ</a></div>
+</section>
+<section class="section" id="essence"><div class="section-head"><span class="section-index">01 / L’ESSENCE</span><span class="section-note">Форма, свет и невидимый след</span></div><h2>Не аромат, который<br>замечают. <em>Тот, который помнят.</em></h2><div class="notes">
+<article class="note"><small>NOTE 01</small><h3>Velours</h3><p>Тёплая древесина, мягкая амбра и тишина после полуночи.</p></article>
+<article class="note"><small>NOTE 02</small><h3>Minuit</h3><p>Холодный воздух, тёмные цветы и свет далёкого города.</p></article>
+<article class="note"><small>NOTE 03</small><h3>Éclipse</h3><p>Смолы, минеральная глубина и тонкий след на коже.</p></article>
+</div></section>
+<section class="section manifesto"><div><p class="section-index">02 / L’INTENTION</p><h2>Le luxe est<br><em>une sensation.</em></h2><p>Не обещание статуса. Не избыток деталей. Только форма, материал и чувство, которое остаётся с вами.</p></div></section>
+<section class="section" id="contact"><div class="section-head"><span class="section-index">03 / DÉCOUVRIR</span><span class="section-note">Концепция независимого парфюмерного дома</span></div><h2>У каждой ночи<br>есть <em>свой аромат.</em></h2><p style="color:var(--muted);font-size:13px;line-height:1.8;max-width:430px;margin-top:25px">NOCTÉ — экспериментальная концепция бренда. Коллекция и коммерческие предложения здесь представлены как художественный прототип.</p><a class="cta" style="display:inline-block;margin-top:20px" href="#top">ВЕРНУТЬСЯ К НАЧАЛУ ↗</a></section>
+<footer class="footer"><a class="wordmark" href="#top">NOCTÉ</a><span>CONCEPT EXPERIENCE · 2026</span><a href="#contact">L’ART DE LA NUIT</a></footer>
+</main>
+<script type="module">
+const stage=document.querySelector('#stage');
+const reduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const mobile=window.matchMedia('(max-width: 650px)').matches;
+let renderer,scene,camera,blob,frame=0,observer;
+try{
+ const THREE=await import('https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js');
+ scene=new THREE.Scene();scene.fog=new THREE.FogExp2(0x0b0a09,.12);
+ camera=new THREE.PerspectiveCamera(mobile?37:34,innerWidth/innerHeight,.1,100);camera.position.set(0,0,mobile?8.9:7.5);
+ renderer=new THREE.WebGLRenderer({alpha:true,antialias:!mobile,powerPreference:'low-power'});
+ renderer.setPixelRatio(Math.min(devicePixelRatio,mobile?1.35:1.8));renderer.setSize(innerWidth,innerHeight);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;stage.appendChild(renderer.domElement);document.body.classList.add('js-ready');
+ const geometry=new THREE.IcosahedronGeometry(1.78,6);
+ const pos=geometry.attributes.position;
+ for(let i=0;i<pos.count;i++){const x=pos.getX(i),y=pos.getY(i),z=pos.getZ(i);const n=1+.12*Math.sin(x*2.3+y*1.7)*Math.cos(z*2.5-y)+.055*Math.sin(y*4.5+z*2.1);pos.setXYZ(i,x*n,y*n,z*n)}
+ geometry.computeVertexNormals();
+ const mat=new THREE.MeshPhysicalMaterial({color:0xc4b69d,metalness:.68,roughness:.16,clearcoat:1,clearcoatRoughness:.08,reflectivity:1,iridescence:1,iridescenceIOR:1.42,iridescenceThicknessRange:[180,950],transmission:.22,thickness:1.8,envMapIntensity:1.8});
+ blob=new THREE.Mesh(geometry,mat);blob.scale.set(1,1.08,.78);scene.add(blob);
+ const lights=[
+  [new THREE.PointLight(0xffe0b0,95,12),-3,3,4],
+  [new THREE.PointLight(0x85a8d5,85,10),3,-1,3],
+  [new THREE.PointLight(0xffffff,65,9),0,4,-2],
+  [new THREE.PointLight(0xb17a48,70,10),-2,-3,2]
+ ];lights.forEach(([l,x,y,z])=>{l.position.set(x,y,z);scene.add(l)});
+ const rim=new THREE.Mesh(new THREE.TorusGeometry(1.92,.008,8,220),new THREE.MeshBasicMaterial({color:0xcbb18a,transparent:true,opacity:.45}));rim.rotation.set(.8,.4,.3);rim.scale.set(1,1.2,1);blob.add(rim);
+ let tx=0,ty=0,px=0,py=0;
+ addEventListener('pointermove',e=>{if(e.pointerType==='touch')return;tx=(e.clientX/innerWidth-.5)*.35;ty=(e.clientY/innerHeight-.5)*.25},{passive:true});
+ const resize=()=>{const m=innerWidth<=650;camera.aspect=innerWidth/innerHeight;camera.fov=m?37:34;camera.position.z=m?8.9:7.5;camera.updateProjectionMatrix();renderer.setPixelRatio(Math.min(devicePixelRatio,m?1.35:1.8));renderer.setSize(innerWidth,innerHeight);};addEventListener('resize',resize,{passive:true});
+ let active=true;observer=new IntersectionObserver(entries=>{active=entries[0].isIntersecting});observer.observe(document.querySelector('.hero'));
+ const render=()=>{if(!active){requestAnimationFrame(render);return}frame+=reduced?0:.006;px+=(tx-px)*.025;py+=(ty-py)*.025;const scroll=scrollY/Math.max(innerHeight,1);blob.rotation.y=frame*.22+px;blob.rotation.x=Math.sin(frame*.6)*.12+py;blob.position.y=Math.sin(frame*.7)*.08-scroll*.45;blob.position.x=Math.sin(frame*.31)*.09;blob.scale.setScalar(1-scroll*.1);renderer.render(scene,camera);if(!reduced)requestAnimationFrame(render);else renderer.render(scene,camera)};
+ if(reduced){blob.rotation.set(.1,.4,0);renderer.render(scene,camera)}else requestAnimationFrame(render);
+}catch(err){console.error('NOCTÉ 3D initialization failed:',err);stage.style.display='none';}
+</script>
+</body></html>
