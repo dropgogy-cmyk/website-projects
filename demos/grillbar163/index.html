@@ -109,7 +109,7 @@ h1 span{display:block}
 .delivery-step{display:grid;grid-template-columns:38px 1fr;gap:15px;padding:17px 0;border-bottom:1px solid #d9cbb9;align-items:start}
 .delivery-step span{font-size:9px;letter-spacing:.12em;color:#a06a4d;padding-top:4px}
 .delivery-step strong{display:block;font-family:"Playfair Display",Georgia,serif;font-size:21px;font-weight:500;margin-bottom:5px}
-.delivery-step p{font-size:10px;line-height:1.6;color:#6d6156;margin:0}
+.delivery-step p{font-size:10px;line-height:1.6;color:#6d6156;margin:0;overflow-wrap:anywhere}
 .contacts-section{background:#15120f;color:#f4ecdf;padding:48px 0}
 .contacts-layout{display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}
 .contacts-copy h2{max-width:680px;color:#f4ecdf}
@@ -177,7 +177,7 @@ h1{font-size:clamp(57px,13.7vw,82px);line-height:.91;margin:20px 0 17px;letter-s
 .menu-heading h2{font-size:42px;max-width:330px}
 .menu-intro{grid-column:1/-1;grid-row:2;font-size:10px;max-width:320px}
 .menu-all{grid-column:2;grid-row:1;font-size:9px;align-self:center}
-.menu-categories{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.menu-categories{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;min-width:0}.category-card,.category-info,.delivery-layout,.delivery-steps,.delivery-step{min-width:0}.category-info h3,.delivery-step strong{overflow-wrap:anywhere}
 .category-photo{height:auto;aspect-ratio:1.25/1}
 .category-info{padding:11px 11px 13px}
 .category-info h3{font-size:clamp(15px,4.2vw,18px);line-height:1.18}
@@ -270,8 +270,8 @@ html{scroll-behavior:auto}
 <section class="menu-section" id="menu">
   <div class="wrap">
     <div class="menu-heading">
-      <div><div class="section-kicker">Наше меню</div><h2>Выбирайте любимое</h2></div>
-      <p class="menu-intro">Выбирайте блюдо по настроению и наслаждайтесь насыщенным вкусом гриля.</p>
+      <div><div class="section-kicker">Наше меню</div><h2>Путь к заказу</h2></div>
+      <p class="menu-intro">Пять направлений меню. Выберите то, чего хочется сегодня, а актуальные позиции уточним у заведения.</p>
       <a class="menu-all" href="#delivery">Всё меню</a>
     </div>
     <div class="menu-categories">
@@ -286,15 +286,15 @@ html{scroll-behavior:auto}
 <section class="feature-section" id="about">
   <div class="feature-grid">
     <div class="feature-photo"><img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&q=90" alt="Иллюстративное фото сочного стейка на деревянной доске" loading="lazy"></div>
-    <div class="feature-copy"><div class="section-kicker">В центре внимания</div><h2 class="dish-title">Вкус, который<br>говорит сам за себя.</h2><p>Мясо, жар и выразительная подача. Здесь будет история реальных блюд и кухни GrillBar163 после подтверждения владельцем.</p><div class="feature-actions"><span class="feature-label">GRILLBAR163</span><a class="pill pill-light" href="#menu">Смотреть меню</a></div></div>
+    <div class="feature-copy"><div class="section-kicker">Фирменная подача</div><h2 class="dish-title">Вкус настоящего<br>огня.</h2><p>Сочный стейк, открытый огонь и выразительная подача задают настроение концепции. Фотография иллюстративная, фирменное блюдо и описание нужно подтвердить у владельца.</p><div class="feature-actions"><span class="feature-label">GRILLBAR163</span><a class="pill pill-light" href="#menu">Смотреть меню</a></div></div>
     <div class="feature-art"><blockquote>Хорошая еда<br>объединяет<br>людей.</blockquote></div>
   </div>
 </section>
 <section class="bottom-band" id="delivery">
   <div class="wrap bottom-layout">
-    <div class="value"><div class="value-icon" aria-hidden="true">♨</div><h3>Свежие продукты</h3><p>Состав и происхождение уточняются у владельца.</p></div>
-    <div class="value"><div class="value-icon" aria-hidden="true">♨</div><h3>Готовим на огне</h3><p>Главный визуальный характер гриль бара.</p></div>
-    <div class="value"><div class="value-icon" aria-hidden="true">✦</div><h3>Внимание к блюдам</h3><p>Меню будет заполнено подтверждёнными позициями.</p></div>
+    <div class="value"><div class="value-icon" aria-hidden="true">♨</div><h3>Свежие продукты</h3><p>Состав и поставщики подтверждаются владельцем.</p></div>
+    <div class="value"><div class="value-icon" aria-hidden="true">♨</div><h3>Готовим на огне</h3><p>Жар и гриль в центре визуальной концепции.</p></div>
+    <div class="value"><div class="value-icon" aria-hidden="true">✦</div><h3>Выразительная подача</h3><p>Позиции меню добавим после подтверждения.</p></div>
     <div class="value"><div class="value-icon" aria-hidden="true">⌖</div><h3>Условия заказа</h3><p>Доставка и самовывоз требуют подтверждения.</p></div>
     <div class="reservation-panel"><a class="pill pill-dark" href="#contacts">Уточнить способ заказа</a></div>
   </div>
@@ -314,7 +314,7 @@ html{scroll-behavior:auto}
     <div class="contacts-copy"><div class="section-kicker">Контакты</div><h2>Будем рады видеть вас.</h2><p>Этот блок готов к реальным данным GrillBar163. Сейчас номер телефона, адрес, график работы и условия доставки не подтверждены владельцем, поэтому мы не подставляем случайные значения.</p>
       <div class="contacts-details"><div class="contact-detail"><span>Телефон</span><strong>Уточняется</strong></div><div class="contact-detail"><span>Адрес</span><strong>Требует подтверждения</strong></div><div class="contact-detail"><span>График работы</span><strong>Требует подтверждения</strong></div><div class="contact-detail"><span>Доставка</span><strong>Условия уточняются</strong></div></div>
     </div>
-    <div class="contacts-card"><a class="brand" href="#top"><span class="brand-flame" aria-hidden="true">♨</span><span><span class="brand-wordmark">GRILLBAR<span>163</span></span><span class="brand-caption">Мясо · огонь · вкус</span></span></a><p>Кинематографичная подача, тёплая палитра и меню, в котором главное — еда.</p><a class="pill pill-light" href="#menu">Открыть меню</a></div>
+    <div class="contacts-card"><a class="brand" href="#top"><span class="brand-flame" aria-hidden="true">♨</span><span><span class="brand-wordmark">GRILLBAR<span>163</span></span><span class="brand-caption">Мясо · огонь · вкус</span></span></a><p>Мясо, огонь и атмосфера. Демонстрационная концепция, подготовленная к обсуждению с владельцем.</p><a class="pill pill-light" href="#menu">Открыть меню</a></div>
   </div>
 </section>
 </main>
