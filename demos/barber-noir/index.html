@@ -40,7 +40,7 @@
     .nav-cta:hover,.button:hover{background:transparent;color:var(--paper);transform:translateY(-2px)}
     .menu-toggle{display:none;border:1px solid var(--line);color:var(--paper);background:transparent;width:44px;height:44px;cursor:pointer}
     .hero{min-height:min(850px,100svh);min-height: min(850px, 100svh);position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#28251f}
-    .hero-bg{position:absolute;inset:0}
+    .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 70% 30%,#665744 0%,#332e26 34%,#171714 78%)}
     .hero-bg img{object-position:center 40%;filter:brightness(.65) saturate(.68);animation:hero-settle 1.4s var(--ease) both}
     .hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,15,13,.87) 0%,rgba(15,15,13,.54) 48%,rgba(15,15,13,.08) 100%),linear-gradient(0deg,rgba(15,15,13,.65),transparent 48%)}
     .hero-content{position:relative;z-index:1;padding-top:160px;padding-bottom:clamp(56px,9vw,108px);width:100%}
@@ -83,9 +83,9 @@
     .principle span:last-child{color:var(--accent)}
     .gallery{padding-top:0}
     .gallery-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:18px;align-items:start}
-    .gallery-main{height:clamp(330px,50vw,610px)}
+    .gallery-main{height:clamp(330px,50vw,610px);background:linear-gradient(135deg,#55483a,#25231f 65%,#171714)}
     .gallery-side{display:grid;gap:18px}
-    .gallery-small{height:clamp(155px,24vw,295px)}
+    .gallery-small{height:clamp(155px,24vw,295px);background:linear-gradient(135deg,#665744,#28251f 65%,#171714)}
     .gallery-caption{display:flex;justify-content:space-between;gap:20px;margin-top:16px;color:var(--muted);font-size:.72rem}
     .booking{background:#24231f;position:relative;overflow:hidden}
     .booking:after{content:"N";position:absolute;right:-.03em;bottom:-.5em;font-family:"Manrope",sans-serif;font-size:min(65vw,760px);line-height:1;color:rgba(255,255,255,.025);font-weight:800;pointer-events:none}
@@ -127,7 +127,15 @@
     @media(max-width:390px){.hero-actions{align-items:flex-start;flex-direction:column;gap:10px}.button{width:100%}.gallery-caption{flex-direction:column;gap:4px}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.js-ready .reveal{opacity:1;transform:none}}
   </style>
-  <script>document.documentElement.classList.add('js-ready');</script>
+  <script>
+    // Graceful fallback: hide broken remote images instead of showing browser broken-image icons.
+    document.querySelectorAll('img').forEach((img) => {
+      img.addEventListener('error', () => {
+        img.hidden = true;
+        img.setAttribute('aria-hidden', 'true');
+      }, { once: true });
+    });
+document.documentElement.classList.add('js-ready');</script>
 </head>
 <body>
   <a class="skip" href="#main">Перейти к содержанию</a>
@@ -175,7 +183,7 @@
         <div class="gallery-grid">
           <figure class="reveal" style="margin:0"><div class="gallery-main"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1400&q=85" alt="Инструменты и рабочее место барбера" loading="lazy"></div><figcaption class="gallery-caption"><span>Инструмент. Техника. Результат.</span><span>Визуальный референс</span></figcaption></figure>
           <div class="gallery-side">
-            <figure class="reveal" style="margin:0"><div class="gallery-small"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=80" alt="Детали барберской атмосферы — заменить на утверждённое фото" loading="lazy"></div><figcaption class="gallery-caption"><span>Детали</span><span>Референс</span></figcaption></figure>
+            <figure class="reveal" style="margin:0"><div class="gallery-small"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=85" alt="Барбер выполняет мужскую стрижку" loading="lazy"></div><figcaption class="gallery-caption"><span>Детали</span><span>Референс</span></figcaption></figure>
             <figure class="reveal" style="margin:0"><div class="gallery-small"><img src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=85" alt="Мужской стиль и уход" loading="lazy"></div><figcaption class="gallery-caption"><span>Стиль без лишнего</span><span>Референс</span></figcaption></figure>
           </div>
         </div>
