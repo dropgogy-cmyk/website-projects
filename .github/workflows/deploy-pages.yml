@@ -1,10 +1,11 @@
-name: Deploy BARBER NOIR demo
+name: Deploy website demos
 
 on:
   push:
     branches: [main]
     paths:
       - "demos/barber-noir/**"
+      - "demos/grillbar163/**"
       - ".github/workflows/deploy-pages.yml"
   workflow_dispatch:
 
@@ -28,10 +29,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Prepare site artifact
         run: |
-          mkdir -p _site/demos/barber-noir
+          mkdir -p _site/demos/barber-noir _site/demos/grillbar163
           cp demos/barber-noir/index.html _site/index.html
           cp demos/barber-noir/index.html _site/demos/barber-noir/index.html
           cp demos/barber-noir/README.md _site/demos/barber-noir/README.md
+          cp demos/grillbar163/index.html _site/demos/grillbar163/index.html
+          cp demos/grillbar163/README.md _site/demos/grillbar163/README.md
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
