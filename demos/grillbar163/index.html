@@ -48,18 +48,99 @@ header{position:absolute;z-index:10;top:31px;left:0;right:0;border-bottom:1px so
 .order-step>a,.step-symbol{width:29px;height:29px;font-size:14px}
 .order-note{font-size:9px}
 }
+
+/* Art direction: cinematic ember photography, editorial menu, warm paper */
+:root{--clay:#c17a53;--paper:#f4ecdf;--cream:#f6eee3}
+.concept{font-size:8px;letter-spacing:.16em;padding:7px 16px;background:#080807;color:#b8a99a}
+header{top:26px;background:linear-gradient(180deg,rgba(8,8,7,.36),transparent);border-bottom-color:rgba(245,236,223,.13)}
+.nav{height:76px;gap:22px}
+.brand-mark{font-size:37px;color:#d68d62}
+.brand-name{font-family:"Playfair Display",Georgia,serif;font-size:20px;letter-spacing:-.04em}
+.brand-name span{color:#d68d62}
+.nav-links{gap:clamp(14px,2.2vw,32px);font-size:11px;white-space:nowrap}
+.nav-links a{padding:29px 0 25px}
+.nav-contact{display:flex;flex-direction:column;gap:3px;white-space:nowrap;font-size:11px}
+.nav-phone-label{font-size:8px;color:#b9a999;letter-spacing:.1em;text-transform:uppercase}
+.nav-phone{font-weight:600}
+.nav-cta{min-width:100px}
+.hero{min-height:min(820px,calc(100svh - 20px))}
+.hero-bg{background-image:linear-gradient(90deg,rgba(8,7,6,.87) 0%,rgba(8,7,6,.64) 27%,rgba(8,7,6,.12) 58%,rgba(8,7,6,.02) 100%),linear-gradient(0deg,rgba(8,7,6,.64),transparent 42%,rgba(8,7,6,.16)),url("https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=2400&q=95");background-position:center 52%;filter:saturate(1.16) contrast(1.04)}
+.hero-inner{padding-top:168px;padding-bottom:104px}
+.hero-copy{max-width:600px}
+h1{font-size:clamp(68px,8vw,116px);line-height:.9;letter-spacing:-.058em}
+.hero-description{font-size:14px;line-height:1.75}
+.hero-actions .btn{min-width:180px}
+.video-link{gap:11px}
+.intro{background:var(--paper);color:var(--ink)}
+.menu-section{background-color:var(--paper);background-image:radial-gradient(rgba(115,82,58,.055) .65px,transparent .65px);background-size:5px 5px;color:var(--ink)}
+.section-head h2{font-size:clamp(46px,5vw,68px);letter-spacing:-.05em}
+.menu-grid{gap:12px}
+.menu-card{border-radius:5px;overflow:hidden;background:#141210}
+.menu-image{height:190px}
+.menu-info{padding:15px 15px 17px}
+.menu-info h3{font-size:18px}
+.menu-info p{font-size:10px;line-height:1.55}
+.menu-link{border-top:1px solid rgba(241,233,222,.17);font-size:9px;letter-spacing:.04em}
+.feature{background:#0c0b09}
+.feature-image img{filter:saturate(1.1) contrast(1.04)}
+.feature-art{background-image:linear-gradient(0deg,rgba(8,7,6,.35),rgba(8,7,6,.1)),url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=85");background-size:cover;background-position:center}
+.feature-art blockquote{font-size:clamp(24px,2.6vw,36px);color:#dca17f}
+.values{background:#0b0a09}
+.contacts-section{background:var(--paper);color:var(--ink);padding-top:64px}
+.contacts-layout{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:clamp(28px,6vw,90px);align-items:stretch}
+.contacts-copy h2{font-size:clamp(38px,4.6vw,62px);line-height:1.02;letter-spacing:-.045em;max-width:720px;margin:18px 0}
+.contacts-copy p{max-width:570px;font-size:12px;line-height:1.8;color:#6b6056}
+.contacts-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px}
+.contacts-tags span{border:1px solid #d7c9b9;border-radius:99px;padding:9px 12px;font-size:9px;color:#78685b}
+.contacts-card{background:#171512;color:var(--cream);padding:clamp(26px,4vw,42px);display:flex;flex-direction:column;align-items:flex-start;justify-content:center;min-height:300px;position:relative;overflow:hidden}
+.contacts-card:after{content:"";position:absolute;width:240px;height:240px;border-radius:50%;right:-95px;top:-90px;background:radial-gradient(circle,rgba(193,122,83,.22),transparent 70%);pointer-events:none}
+.contacts-mark{font-size:32px;color:#d68d62;margin-bottom:26px}
+.contacts-card h3{font-family:"Playfair Display",Georgia,serif;font-weight:500;font-size:30px;margin:12px 0}
+.contacts-card p{font-size:11px;color:#b8aa9b;margin:0 0 26px}
+.mobile-bar{display:none}
+@media(max-width:1050px){
+.nav-contact{display:none}
+.nav-links{gap:17px}
+.menu-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.menu-image{height:200px}
+}
+@media(max-width:640px){
+.concept{font-size:7px}
+header{top:25px}
+.nav{height:62px}
+.nav-links{display:none}
+.nav-cta{min-height:38px;padding:0 17px;min-width:88px}
+.brand-name{font-size:17px}
+.hero{min-height:max(680px,calc(100svh - 20px));align-items:flex-end}
+.hero-bg{background-image:linear-gradient(90deg,rgba(8,7,6,.62),rgba(8,7,6,.08)),linear-gradient(0deg,rgba(8,7,6,.94) 0%,rgba(8,7,6,.48) 48%,rgba(8,7,6,.05)),url("https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1200&q=95");background-position:59% center}
+.hero-inner{padding:170px 0 96px}
+h1{font-size:clamp(58px,13.8vw,82px);max-width:440px}
+.hero-description{max-width:290px}
+.hero-actions .btn{min-width:0}
+.section-head h2{font-size:46px}
+.menu-grid{grid-template-columns:1fr}
+.menu-card{grid-template-columns:minmax(0,38%) minmax(0,1fr)}
+.menu-image{height:auto;aspect-ratio:1/1}
+.menu-info{padding:14px}
+.menu-info h3{font-size:clamp(17px,5vw,21px)}
+.contacts-section{padding:48px 0 90px}
+.contacts-layout{grid-template-columns:1fr;gap:24px}
+.contacts-copy h2{font-size:43px}
+.contacts-card{min-height:260px}
+.mobile-bar{display:grid}
+}
 </style>
 </head>
 <body id="top">
 <div class="concept"><strong>Демонстрационная концепция</strong> · не официальный сайт GrillBar163</div>
 <header><div class="wrap nav">
 <a class="brand" href="#top" aria-label="GrillBar163 — на главную"><span class="brand-mark" aria-hidden="true">♨</span><span class="brand-name">GRILLBAR<span>163</span><small>Мясо · огонь · вкус</small></span></a>
-<nav class="nav-links" aria-label="Главная навигация"><a href="#top">Главная</a><a href="#menu">Меню</a><a href="#story">О концепции</a><a href="#order">Заказ</a><a href="#contacts">Контакты</a></nav>
-<a class="btn btn-cream" href="#menu">Выбрать блюдо </a></div></header>
+<nav class="nav-links" aria-label="Главная навигация"><a href="#top">Главная</a><a href="#menu">Меню</a><a href="#story">О нас</a><a href="#order">Доставка</a><a href="#contacts">Контакты</a></nav>
+<div class="nav-contact"><span class="nav-phone-label">Связаться с гриль-баром</span><a href="#contacts" class="nav-phone">Контакты</a></div><a class="btn btn-cream nav-cta" href="#order">Заказать</a></div></header>
 <main>
-<section class="hero" aria-labelledby="hero-title"><div class="hero-bg" role="img" aria-label="Иллюстративная фотография мяса, приготовленного на огне"></div><div class="hero-inner"><div class="hero-copy"><div class="eyebrow">Гриль-бар · Сызрань</div><h1 id="hero-title">Настоящий <span>вкус огня.</span></h1><p class="hero-description">Мясо, жар и атмосфера, ради которых хочется вернуться. Выберите блюдо по настроению.</p><div class="hero-actions"><a class="btn btn-cream" href="#menu">Перейти к меню </a><a class="video-link" href="#story"><span class="play" aria-hidden="true">▶</span><span>Почувствовать<br>характер</span></a></div></div></div><div class="hero-index" aria-hidden="true"><span>01</span><span>02</span><span>03</span></div><div class="hero-bottom"><span>Мясо · Огонь · Вкус</span><span>Листайте вниз</span></div></section>
+<section class="hero" aria-labelledby="hero-title"><div class="hero-bg" role="img" aria-label="Иллюстративная фотография мяса, приготовленного на огне"></div><div class="hero-inner"><div class="hero-copy"><div class="eyebrow">Гриль-бар в Сызрани</div><h1 id="hero-title">Настоящий <span>вкус огня</span></h1><p class="hero-description">Сочные блюда на огне и насыщенный вкус. Выберите то, чего хочется именно сегодня.</p><div class="hero-actions"><a class="btn btn-cream" href="#menu">Перейти к меню </a><a class="video-link" href="#story"><span class="play" aria-hidden="true">▶</span><span>Почувствовать<br>характер</span></a></div></div></div><div class="hero-index" aria-hidden="true"><span>01</span><span>02</span><span>03</span></div><div class="hero-bottom"><span>Мясо · Огонь · Вкус</span><span>Листайте вниз</span></div></section>
 <section class="intro"><div class="wrap intro-inner"><div class="intro-label">Меньше шума. Больше вкуса.</div><div class="intro-copy">Эта концепция ставит в центр еду: сильный кадр, понятные категории и короткий путь к выбору. Все сведения о меню и заказе требуют подтверждения владельцем.</div></div></section>
-<section class="section menu-section" id="menu"><div class="wrap"><div class="section-head"><div><div class="kicker">Выберите настроение</div><h2>Наше меню</h2></div><p class="section-intro">Предварительные категории для демонстрации дизайна. Актуальные позиции, состав, порции и цены нужно сверить перед запуском.</p><a class="all-menu" href="#order">Как заказать </a></div>
+<section class="section menu-section" id="menu"><div class="wrap"><div class="section-head"><div><div class="kicker">Наше меню</div><h2>Выбирайте любимое</h2></div><p class="section-intro">Предварительные категории для демонстрации дизайна. Актуальные позиции, состав, порции и цены нужно сверить перед запуском.</p><a class="all-menu" href="#order">Путь к заказу</a></div>
 <div class="filters" role="group" aria-label="Фильтр категорий меню"><button class="filter" type="button" aria-pressed="true" data-filter="all">Всё меню</button><button class="filter" type="button" aria-pressed="false" data-filter="grill">Гриль</button><button class="filter" type="button" aria-pressed="false" data-filter="chicken">Курица</button><button class="filter" type="button" aria-pressed="false" data-filter="quick">Перекус</button><button class="filter" type="button" aria-pressed="false" data-filter="other">Другое</button></div>
 <div class="menu-grid" id="menu-grid">
 <article class="menu-card" data-category="grill"><div class="menu-image"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=85" alt="Иллюстративное фото мяса на гриле" loading="lazy"><span class="menu-number">01</span></div><div class="menu-info"><h3>Шашлык</h3><p>Классика, приготовленная на огне.</p><a class="menu-link" href="#order"><span>Выбрать категорию</span></a></div></article>
@@ -68,10 +149,10 @@ header{position:absolute;z-index:10;top:31px;left:0;right:0;border-bottom:1px so
 <article class="menu-card" data-category="quick"><div class="menu-image"><img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=800&q=85" alt="Иллюстративное фото шаурмы" loading="lazy"><span class="menu-number">04</span></div><div class="menu-info"><h3>Шаурма</h3><p>Сытный вариант для быстрого перекуса.</p><a class="menu-link" href="#order"><span>Выбрать категорию</span></a></div></article>
 <article class="menu-card" data-category="other"><div class="menu-image"><img src="https://images.unsplash.com/photo-1552539618-7eec9b4d1796?auto=format&fit=crop&w=800&q=85" alt="Иллюстративное фото пиццы" loading="lazy"><span class="menu-number">05</span></div><div class="menu-info"><h3>Пицца и гарниры</h3><p>Категории, наличие которых нужно подтвердить.</p><a class="menu-link" href="#order"><span>Выбрать категорию</span></a></div></article>
 </div><p class="menu-note"><strong>Важно:</strong> блюда и фотографии здесь служат визуальным примером. Это не подтверждённое актуальное меню GrillBar163; цены намеренно не добавлены.</p></div></section>
-<section class="feature" id="story"><div class="feature-grid"><div class="feature-image"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=88" alt="Иллюстративная фотография мяса на гриле крупным планом" loading="lazy"></div><div class="feature-copy"><div class="kicker">В центре внимания</div><h2 class="feature-title">Вкус, который<br>говорит сам за себя.</h2><p>Вместо выдуманного фирменного блюда — акцент на самой идее гриля. Когда владелец подтвердит реальное блюдо и даст свои фотографии, этот блок станет его витриной.</p><div class="feature-cta"><span class="feature-price">GrillBar163</span><a class="btn btn-cream" href="#menu">Выбрать блюдо </a></div></div><div class="feature-art"><blockquote>Хорошая еда<br>не нуждается<br>в лишних словах.</blockquote></div></div></section>
+<section class="feature" id="story"><div class="feature-grid"><div class="feature-image"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=88" alt="Иллюстративная фотография мяса на гриле крупным планом" loading="lazy"></div><div class="feature-copy"><div class="kicker">Фирменная подача</div><h2 class="feature-title">Вкус, который<br>говорит сам за себя.</h2><p>Вместо выдуманного фирменного блюда — акцент на самой идее гриля. Когда владелец подтвердит реальное блюдо и даст свои фотографии, этот блок станет его витриной.</p><div class="feature-cta"><span class="feature-price">GrillBar163</span><a class="btn btn-cream" href="#menu">Выбрать блюдо </a></div></div><div class="feature-art"><blockquote>Хорошая еда<br>не нуждается<br>в лишних словах.</blockquote></div></div></section>
 <section class="values"><div class="wrap values-grid"><div class="value"><div class="value-icon" aria-hidden="true">♨</div><h3>Огонь и жар</h3><p>Визуальный язык, который сразу задаёт характер.</p></div><div class="value"><div class="value-icon" aria-hidden="true">✦</div><h3>Понятный выбор</h3><p>Категории без лишних шагов и перегруженных экранов.</p></div><div class="value"><div class="value-icon" aria-hidden="true">⌁</div><h3>Внимание к деталям</h3><p>Чёткая типографика, ритм и спокойные акценты.</p></div><div class="value"><div class="value-icon" aria-hidden="true">✳</div><h3>Сначала мобильный</h3><p>Удобные кнопки и читаемые карточки на небольшом экране.</p></div><div class="value-cta"><a class="btn btn-cream" href="#order">Как будет работать заказ </a></div></div></section>
 <section class="section order-section" id="order"><div class="wrap"><div class="order-heading"><div><div class="kicker">От выбора до заказа</div><h2>Понятно. Просто. По делу.</h2></div><p class="section-intro">Никаких сложных сценариев: выбираете, уточняете детали и переходите к подтверждённому способу заказа.</p></div><div class="order-steps"><article class="order-step"><span class="step-number">01</span><div class="step-copy"><h3>Выберите блюдо</h3><p>Начните с меню и найдите то, что хочется сегодня.</p></div><a class="step-symbol" href="#menu" aria-label="Перейти к меню">•</a></article><article class="order-step"><span class="step-number">02</span><div class="step-copy"><h3>Уточните детали</h3><p>Состав, цену и наличие сверим по актуальному меню.</p></div><span class="step-symbol" aria-hidden="true">✳</span></article><article class="order-step"><span class="step-number">03</span><div class="step-copy"><h3>Закажите удобным способом</h3><p>Добавим телефон или мессенджер после подтверждения владельцем.</p></div><span class="step-symbol" aria-hidden="true">•</span></article></div><p class="order-note">Демонстрационный блок: реальные каналы заказа будут добавлены после подтверждения.</p></div></section>
-<section class="section" id="contacts" style="padding-top:0;background:#f7f0e7;color:#191714"><div class="wrap"><div style="padding:clamp(28px,5vw,52px);background:#e8dccd;display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap"><div><div class="kicker">Следующий этап</div><h2 style="max-width:720px">Концепция готова к наполнению реальными данными.</h2><p style="font-size:11px;line-height:1.8;color:#665a4e;max-width:570px">Чтобы превратить демонстрацию в сайт для гостей, нужны утверждённое меню, настоящие фотографии, подтверждённые контакты и рабочий способ заказа.</p></div><a class="btn" style="background:#191714;color:#f1e9de;border-radius:999px" href="#menu">Вернуться к меню</a></div></div></section>
+<section class="section contacts-section" id="contacts"><div class="wrap contacts-layout"><div class="contacts-copy"><div class="kicker">Будем на связи</div><h2>Гриль начинается с огня. Хороший вечер — с выбора.</h2><p>Сейчас мы собираем подтверждённые данные заведения. После согласования здесь появятся телефон, адрес, часы работы и точные условия доставки.</p><div class="contacts-tags"><span>Телефон уточняется</span><span>Адрес уточняется</span><span>Доставка уточняется</span></div></div><div class="contacts-card"><span class="contacts-mark" aria-hidden="true">♨</span><div class="kicker">GrillBar163</div><h3>Настоящий вкус огня</h3><p>Сызрань · мясо · огонь · вкус</p><a class="btn btn-cream" href="#menu">Смотреть меню</a></div></div></section>
 </main>
 <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">♨</span><span class="brand-name">GRILLBAR<span>163</span><small>Мясо · огонь · вкус</small></span></a><div class="footer-note">Неофициальная демонстрационная концепция. Фото иллюстративные; меню, цены, контакты и заказ не подтверждены. Перед публикацией нужны проверка фактов и согласие владельца.</div></div></footer>
 <div class="mobile-bar" aria-label="Быстрые действия"><a class="btn btn-cream" href="#menu">Открыть меню</a><a class="btn btn-outline" href="#order">Как заказать</a></div>
