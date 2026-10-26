@@ -2,23 +2,33 @@
 
 Наше рабочее хранилище для создания сайтов для бизнеса.
 
-## Первый демо-проект
+## Демо-проекты
 
-**BARBER / NOIR** — демонстрационный одностраничный сайт для барбершопа.
-
+### BARBER / NOIR
+Демонстрационный одностраничный сайт для барбершопа.
 - [Открыть исходник сайта](demos/barber-noir/index.html)
-- [Бриф проекта](demos/barber-noir/BRIEF.md)
+- [Бриф](demos/barber-noir/BRIEF.md)
 - [Отчёт проверок](demos/barber-noir/QA-REPORT.md)
-- [Инструкция по запуску](demos/barber-noir/README.md)
+- [Инструкция](demos/barber-noir/README.md)
 
-Публичная версия через GitHub Pages: https://dropgogy-cmyk.github.io/website-projects/
+### GrillBar163
+Демонстрационная концепция сайта гриль-доставки в Сызрани. Это не официальный сайт; контакты, ассортимент и фото требуют подтверждения.
+- [Открыть исходник сайта](demos/grillbar163/index.html)
+- [Исследование источников](demos/grillbar163/RESEARCH.md)
+- [Бриф](demos/grillbar163/BRIEF.md)
+- [Отчёт проверок](demos/grillbar163/QA-REPORT.md)
+- [Описание проекта](demos/grillbar163/README.md)
 
-> Ссылка будет доступна после успешного запуска GitHub Actions и включения GitHub Pages для репозитория. Публикация ещё не подтверждена. Если ссылка пока не открывается, проверьте вкладку Actions и Settings → Pages.
+## GitHub Pages
+- BARBER / NOIR (корень): https://dropgogy-cmyk.github.io/website-projects/
+- GrillBar163: https://dropgogy-cmyk.github.io/website-projects/demos/grillbar163/
+
+Ссылки будут доступны после успешного запуска GitHub Actions и включения GitHub Pages для репозитория. Публикация не подтверждена, пока не проверен deployment в Actions и сама страница.
 
 ## Цели
-- Создавать качественные и адаптивные сайты.
+- Создавать качественные адаптивные сайты для бизнеса.
 - Хранить код и историю изменений.
-- Проверять качество перед сдачей клиенту.
+- Проверять качество перед передачей клиенту.
 
 ## Принципы
 - Не выдумывать факты о клиентах.
